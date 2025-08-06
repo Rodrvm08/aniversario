@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f8f1f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(135deg, #e70008 0%, #7c2e18 100%);
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    flex-wrap: wrap;
+
+    &-box {
+        background: white;
+        margin: 0 10px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        min-width: 100px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &-number {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #e70008;
+    }
+
+    &-label {
+        font-size: 1rem;
+        color: #666;
+    }
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    gap: 30px;
+
+    &-text {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    &-image {
+        flex: 1;
+        min-width: 300px;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #e70008;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .countdown {
+        &-box {
+            margin: 5px;
+            min-width: 70px;
+            padding: 15px 10px;
+        }
+
+        &-number {
+            font-size: 1.8rem;
+        }
+
+        &-label {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .countdown {
+        &-box {
+            min-width: 60px;
+            padding: 10px 5px;
+        }
+
+        &-number {
+            font-size: 1.5rem;
+        }
+
+        &-label {
+            font-size: 0.7rem;
+        }
+    }
+}
